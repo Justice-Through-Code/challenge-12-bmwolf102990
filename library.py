@@ -22,7 +22,10 @@ class Library():
         """Remove a book from the book list"""
         pass
         filtered_list = []
+        # LIST COMPREHENSION SYNTAX
+        # It is basically saying "do this FOR each book IN the self.books list...if the book's title is NOT EQUAL TO the title that we are removing AND the book is NOT already IN the 'filtered_list' list...append that book to the 'filtered_list' list"
         [filtered_list.append(book) for book in self.books if book.title != title and book not in filtered_list]
+        # then we reassign the value of our library's books list to the new filtered list
         self.books = filtered_list
 
     def display_books(self):
