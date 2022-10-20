@@ -18,7 +18,7 @@ class Library():
         pass
         return int(len(self.books))
 
-    def remove_title(self, title):
+    def remove_title(self, title: str):
         """Remove a book from the book list"""
         pass
         filtered_list = []
