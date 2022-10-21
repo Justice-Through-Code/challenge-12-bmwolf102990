@@ -7,8 +7,7 @@ class Library():
 
     def add_title(self, title: str, author: str):
         """Add a Book object with the given title and author to the book list"""
-        new_book = Book(title, author)
-        self.books.append(new_book)
+        self.books.append(Book(title, author))
 
     def count_books(self):
         """Return the number of books currently in the booklist"""
