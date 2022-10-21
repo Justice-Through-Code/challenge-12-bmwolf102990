@@ -1,26 +1,21 @@
 from book import Book
 
-
 class Library():
     def __init__(self):
         """Initialize the empty book list"""
-        pass
         self.books = []
 
     def add_title(self, title: str, author: str):
         """Add a Book object with the given title and author to the book list"""
-        pass
         new_book = Book(title, author)
         self.books.append(new_book)
 
     def count_books(self):
         """Return the number of books currently in the booklist"""
-        pass
         return int(len(self.books))
 
     def remove_title(self, title: str):
         """Remove a book from the book list"""
-        pass
         filtered_list = []
         # LIST COMPREHENSION SYNTAX
         # It is basically saying "do this FOR each book IN the self.books list...if the book's title is NOT EQUAL TO the title that we are removing AND the book is NOT already IN the 'filtered_list' list...append that book to the 'filtered_list' list"
